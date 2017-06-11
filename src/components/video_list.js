@@ -5,7 +5,7 @@ const VideoList = (props) =>{
 	console.dir(props);
 	const videoItems = props.videos.map((video)=>{
 		console.log(video);
-		return <VideoListItem video={video} />;
+		return <VideoListItem key={video.etag} video={video} />;
 	});
 
 	return (
